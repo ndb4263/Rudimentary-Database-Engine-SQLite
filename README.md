@@ -1,5 +1,6 @@
 # CS 6360 | Team Bohr | Davisbase Project
 
+Designed and developed a rudimentary database engine employing a simplified file-per-table structure reminiscent of SQLite, with efficient B+1 and B-tree indexing for data storage and retrieval.
 ---
 
 ## Steps to compile and run the program
