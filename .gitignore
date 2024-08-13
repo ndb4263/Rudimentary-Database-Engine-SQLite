@@ -1,0 +1,6 @@
+.DS_Store
+*.class
+node_modules/
+dist/
+.idea
+# find . -name '*.class' -exec rm -f {} \;

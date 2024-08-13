@@ -1,0 +1,37 @@
+VERSION;
+
+HELP;
+
+DROP TABLE Student;
+
+CREATE TABLE Student (id INT PRIMARY KEY, name TEXT, marks FLOAT, graduation_year YEAR, graduation_date DATETIME);
+
+INSERT INTO Student (id, name, marks, graduation_year, graduation_date) VALUES (101, Daksh, 98.00, 2024, 2024-05-18_23:59:45);
+INSERT INTO Student (id, name, marks, graduation_year, graduation_date) VALUES (102, Nikhil, 95.00, 2023, 2023-05-20_21:59:45);
+INSERT INTO Student (id, name, marks, graduation_year, graduation_date) VALUES (103, Radheshyam, 92.50, 2023, 2023-05-18_20:59:45);
+INSERT INTO Student (id, name, marks, graduation_year, graduation_date) VALUES (104, Harshith, 93.50, 2023, 2023-05-18_20:59:45);
+
+SELECT * FROM Student;
+
+DELETE FROM TABLE Student WHERE id = 104;
+
+SELECT * FROM Student;
+
+UPDATE Student SET name = Harshith WHERE id = 103;
+
+SELECT * FROM Student;
+
+CREATE INDEX ON Student (name);
+
+SELECT * FROM Student WHERE id = 101;
+SELECT * FROM Student WHERE id > 101;
+SELECT * FROM Student WHERE id <= 103;
+SELECT * FROM Student WHERE id <> 102;
+
+SHOW TABLES;
+
+DROP TABLE Student;
+
+SHOW TABLES;
+
+EXIT;
