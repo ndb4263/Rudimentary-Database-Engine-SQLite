@@ -20,40 +20,40 @@ Designed and developed a rudimentary database engine employing a simplified file
 
 All commands below are case insensitive.
 
-**SHOW TABLES;**
+1) **SHOW TABLES;**
 Display the names of all tables.
 
-**CREATE TABLE <table_name> (<column_name> <data_type> <not_null> <unique>);**
+2) **CREATE TABLE <table_name> (<column_name> <data_type> <not_null> <unique>);**
 Creates a table with the given columns.
 
-**CREATE INDEX ON <table_name> (<column_name>);**
+3) **CREATE INDEX ON <table_name> (<column_name>);**
 Creates an index on a column in the table.
 
-**DROP TABLE <table_name>;**
+4) **DROP TABLE <table_name>;**
 Remove table data (records) and its metadata.
 
-**UPDATE TABLE <table_name> SET <column_name> = <value> [WHERE <condition>];**
+5) **UPDATE TABLE <table_name> SET <column_name> = <value> [WHERE <condition>];**
 Modify records data whose optional <condition>
 is <column_name> = <value>.
 
-**INSERT INTO <table_name> (<column_list>) VALUES (<values_list>);**
+6) **INSERT INTO <table_name> (<column_list>) VALUES (<values_list>);**
 Inserts a new record into the table with the given values for the given columns.
 
-**DELETE FROM TABLE <table_name> [WHERE <condition>];**
+7) **DELETE FROM TABLE <table_name> [WHERE <condition>];**
 Delete one or more table records whose optional <condition>
 is <column_name> = <value>.
 
-**SELECT <column_list> FROM <table_name> [WHERE <condition>];**
+8) **SELECT <column_list> FROM <table_name> [WHERE <condition>];**
 Display table records whose optional <condition>
 is <column_name> = <value>.
 
-**VERSION;**
+9) **VERSION;**
 Display the program version.
 
-**HELP;**
+10) **HELP;**
 Display this help information.
 
-**EXIT;**
+11) **EXIT;**
 Exit the program.
 
 ---
